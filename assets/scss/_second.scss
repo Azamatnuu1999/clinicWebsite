@@ -1,0 +1,113 @@
+.second{
+    background-color: #aec5ce;
+    padding: 30px 0;
+    font-family: 'cormorant';
+    &__h1{
+        color: #7f2941;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'cormorant';
+        font-weight: 700;
+        font-size: 30px;
+        span{
+            border-bottom: 2px solid #7f2941;
+        }
+    }
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card1{
+            width: 30%;
+            border-radius: 22px;
+            position: relative;
+            &__button{
+                position: absolute;
+                width: 80%;
+                bottom: 10px;
+                left: 10%;
+                z-index: 1;
+                text-transform: uppercase;
+                background-color: #7f2941;
+                border: none;
+                font-size: 30px;
+                color: #aec5ce;
+                font-weight: 900;
+            }
+            &__button:hover{
+                color: #7F2941;
+                background-color: #AEC5CE;
+                text-shadow: 0 0 1px white;
+                transition-duration: .3s;
+                transition-timing-function: linear;
+                box-shadow: 0 0 5px #7F2941;
+            }
+        }
+        .card1:hover{
+            transform: scale(1.03);
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            box-shadow: 0 0 7px #7F2941;
+        }
+    }
+}
+@media(max-width:1030px){
+    .second{
+        .contain{
+            .card1{
+                &__button{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:550px){
+    .second{
+        &__h1{
+            font-size: 20px;
+        }
+        .contain{
+            .card1{
+                &__button{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .second{
+        &__h1{
+            font-size: 16px;
+        }
+        .contain{
+            width: 96%;
+            .card1{
+                &__button{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:375px){
+    .second{
+        &__h1{
+            font-size: 16px;
+        }
+        .contain{
+            width: 96%;
+            .card1{
+                width: 90%;
+                margin: 10px auto;
+                &__button{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

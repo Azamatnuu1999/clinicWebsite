@@ -1,0 +1,224 @@
+.six{
+    background-color: #f4f4f8;
+    padding: 50px 0;
+    .text{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        &__h1{
+            font-family: 'cormorant';
+            font-weight: 600;
+            margin-top: 0;
+            text-transform: uppercase;
+            color: #7f2941;
+            font-size: 30px;
+            span{
+                padding-bottom: 10px;
+                border-bottom: 4px solid #aec5ce;
+            }
+        }
+        &__h4{
+            color: #004549;
+            text-transform: uppercase;
+        }
+        &__p{
+            color: #7f2941;
+        }
+    }
+    .main{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .left{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .card1{
+                display: flex;
+                gap: 0 10px;
+                height: 60px;
+                background-color: white;
+                padding: 5px 10px;
+                border-radius: 20px;
+                margin: 10px 0;
+                &__img{
+                    width: 20%;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                &__text{
+                    width: 80%;
+                    align-items: center;
+                    h1{
+                        line-height: 24px;
+                        font-size: 24px;
+                        color: #7f2941;
+                        font-weight: 600;
+                        font-family: 'cormorant';
+                        margin-bottom: 0;
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 13px;
+                        margin-top: 3px;
+                        a{
+                            color: #7f2941;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .card1:hover{
+                transition-timing-function: linear;
+                transition-duration: .3s;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+        .right{
+            width: 65%;
+            padding: 30px;
+            margin: 10px 0;
+            background-color: white;
+            border-radius: 20px;
+            .form{
+                &__input{
+                    width: 48%;
+                    margin-bottom: 20px;
+                    padding: 8px 12px;
+                    background-color: #f4f4f8;
+                    border-radius: 18px;
+                    outline: none;
+                    border: none;
+                }
+                .input{
+                    margin-left: 2%;
+                }
+                &__message{
+                    width: 99%;
+                    margin-bottom: 20px;
+                    padding: 8px 12px;
+                    background-color: #f4f4f8;
+                    border-radius: 18px;
+                    outline: none;
+                    border: none;
+                }
+                label{
+                    font-size: 14px;
+                    margin-left: 4px;
+                    font-weight: 400;
+                    color: #7f2941;
+                    margin-bottom: 0;
+                    a{
+                        color: #229ED9;
+                        text-decoration: none;
+                    }
+                }
+                &__button{
+                    background-color: #7f2941;
+                    color: #aec5ce;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 20px;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                }
+                &__button:hover{
+                    background-color: #aec5ce;
+                    color: #7f2941;
+                    box-shadow: 0 0 3px #7f2941;
+                    transition-duration: 0.3s;
+                    transition-timing-function: linear;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .six{
+        .contain{
+            .text{
+                width: 100%;
+            }
+            .left{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .card1{
+                    width: 48%;
+                }
+            }
+            .right{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .six{
+        .contain{
+            width: 96%;
+            .main{
+                .left{
+                    .card1{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:380px){
+    .six{
+        .contain{
+            .text{
+                &__h1{
+                    font-size: 18px;
+                }
+                &__h4{
+                    font-size: 14px;
+                }
+                &__p{
+                    font-size: 13px;
+                }
+            }
+            .main{
+                .right{
+                    text-align: center;
+                    label{
+                        width: 70%;
+                        font-size: 13px;
+                    }
+                    input{
+                        width: 100%;
+                        font-size: 14px;
+                    }
+                    .input{
+                        margin-left: 0;
+                    }
+                    .form{
+                        &__button{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .left{
+                    .card1{
+                        a{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

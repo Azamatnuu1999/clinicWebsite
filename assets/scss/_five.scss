@@ -1,0 +1,29 @@
+.five{
+    background-color: #7f2941;
+    padding: 60px 0;
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .logo{
+            width: 20%;
+            &__img{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .five{
+        padding: 20px 0;
+        .contain{
+            width: 96%;
+            .logo{
+                width: 100%;
+                margin: 5px 0;
+                text-align: center;
+            }
+        }
+    }
+}

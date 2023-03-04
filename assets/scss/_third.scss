@@ -1,0 +1,109 @@
+.third{
+    background-color: #f4f4f8;
+    padding: 50px 0;
+    .text{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        &__h1{
+            font-family: 'cormorant';
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #7f2941;
+            font-size: 30px;
+            span{
+                padding-bottom: 10px;
+                border-bottom: 4px solid #aec5ce;
+            }
+        }
+        &__p{
+            color: #7f2941;
+        }
+    }
+    .contain{
+        .slider{
+            ul{
+                li{
+                    width: 29.5%;
+                    margin: 0 2%;
+                    color: #7f2941;
+                    font-weight: 900;
+                    font-family: 'cormorant';
+                    text-align: start;
+                    span{
+                        font-family: serif;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 1px;
+                        color: #aec5ce;
+                    }
+                }
+                li:hover{
+                    transform: scale(1.05);
+                    transition-duration: .3s;
+                    transition-timing-function: linear;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    .third{
+        .contain{
+            .slider{
+                ul{
+                    li{
+                        width: 48%;
+                    }
+                }
+            }
+            .text{
+                width: 100%;
+                &__h1{
+                    span{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .third{
+        .contain{
+            width: 96%;
+            .text{
+                &__h1{
+                    font-size: 20px;
+                }
+                &__p{
+                    font-size: 13px;
+                }
+            }
+            .slider{
+                ul{
+                    li{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px){
+    .third{
+        .contain{
+            .slider{
+                ul{
+                    li{
+                        width: 97%;
+                    }
+                }
+            }
+        }
+    }
+}

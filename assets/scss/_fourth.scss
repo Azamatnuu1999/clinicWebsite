@@ -1,0 +1,35 @@
+.fourth{
+    .contain{
+        display: flex;
+        padding: 70px 0;
+        .card1{
+            width: 33.3%;
+        }
+        .card1:hover{
+            transform: scale(1.02);
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+            box-shadow: 0 0 5px black;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .fourth{
+        .contain{
+            width: 96%;
+            flex-wrap: wrap;
+            .card1{
+                width: 100%;
+                margin: 10px 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .card1:hover{
+                transform: scale(1.01);
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.second5{
+    background-color: #cac5ce;
+    padding-top: 145px;
+    background-image: url(../media/image2.png);
+    background-repeat: no-repeat;
+    background-size: 1290px 250px;
+    background-position:top center;
+    padding-bottom: 40px;
+    .contain{
+        width: 70%;
+        background-color: white;
+        padding: 30px 20px;
+        &__h1{
+            color: #7f2941;
+            font-family: 'cormorant';
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 0;
+            font-size: 32px;
+            margin-bottom: 0;
+        }
+        &__h2{
+            margin: 0;
+            text-align: center;
+            color: #aec5ce;
+            font-size: 42px;
+            line-height: 2px;
+            font-weight: 900;
+            margin-bottom: 38px;
+        }
+        &__p{
+            text-align: center;
+            text-transform: uppercase;
+            color: #7f2941;
+            font-size: 13px;
+            a{
+                text-decoration: none;
+            }
+            span{
+                color: grey;
+            }
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .left{
+                width: 30%;
+                color: #7f2941;
+                li{
+                    border-bottom: 1px solid #aec5ce;
+                    line-height: 32px;
+                    a{
+                        text-decoration: none;
+                    }
+                    span{
+                        color: #AEC5CE;
+                        font-weight: 900;
+                    }
+                }
+                li:hover{
+                    span{
+                        color: #7f2941;
+                    }
+                }
+            }
+            .right{
+                width: 66%;
+                &__button{
+                    border: none;
+                    margin: 0;
+                    padding: 5px 15px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                &__h3{
+                    color: #7f2941;
+                    font-family: 'cormorant';
+                    font-weight: 600;
+                }
+                &__p{
+                    font-size: 14px;
+                }
+                &__h4{
+                    color: #7f2941;
+                    font-family: 'cormorant';
+                    font-weight: 600;
+                    margin-bottom: -70px;
+                }
+                &__h2{
+                    color: #AEC5CE;
+                    font-weight: 900;
+                }
+                &__ul{
+                    font-size: 14px;
+                    li{
+                        list-style: disc;
+                    }
+                }
+                .active{
+                    background-color: #7f2941;
+                    color: #AEC5CE;
+                    a:hover{
+                        color: antiquewhite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:700px){
+    .second5{
+        .contain{
+            width: 96%;
+            padding: 20px 5px;
+            &__h1{
+                font-size: 24px;
+            }
+            &__p{
+                font-size: 10px;
+            }
+            .main{
+                .left{
+                    padding-left: 0;
+                    width: 24%;
+                }
+                .right{
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .second5{
+        .contain{
+            .main{
+                .left{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 12px;
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:210px){
+    .second5{
+        .contain{
+            .main{
+                .left{
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
